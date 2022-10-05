@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-public abstract class list extends BaseEntity{
+public class list extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
