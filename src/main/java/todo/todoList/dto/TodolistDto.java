@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ListTodoDto {
+public class TodolistDto {
 
     private Long listId;
 
