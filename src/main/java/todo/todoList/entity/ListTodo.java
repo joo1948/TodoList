@@ -3,7 +3,6 @@ package todo.todoList.entity;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import net.bytebuddy.utility.nullability.MaybeNull;
 import todo.todoList.entity.Converter.BooleanToYNConverter;
 
 import javax.persistence.*;
@@ -11,7 +10,8 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-public class list extends BaseEntity{
+@Table(name="list")
+public class ListTodo extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
